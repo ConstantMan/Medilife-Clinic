@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Medilife</title>
+    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            margin-left: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .button-container .icon {
+            margin-right: 5px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .button-container .side-icon {
+            margin-left: 5px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .button-container .update-button {
+            background-color: orange;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="medilife-load"></div>
+    </div>
+
+    <header class="header-area">
+        <div class="main-header-area" id="stickyHeader">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 h-100">
+                        <div class="main-menu h-100">
+                            <nav class="navbar h-100 navbar-expand-lg">
+                                <a class="navbar-brand" href="index.html"><img src="img/core-img/logo.png" alt="Logo"></a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#medilifeMenu" aria-controls="medilifeMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                                <div class="collapse navbar-collapse" id="medilifeMenu">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="admin.html">Αρχική <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="view_patients.html">Δείτε τους ασθενείς</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="medical_history.html">Δείτε το ιστορικό των ασθενών</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="appointments_admin.html">Κλείστε ραντεβού</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="doctors.html">Δείτε τους υπόλοιπους γιατρούς</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="view_appointments.html">Δείτε τα τρέχοντα ραντεβού</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="availability.html">Ώρες διαθεσιμότητας</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="single-hero-slide bg-img bg-overlay-white" style="background-image: url(img/blog-img/2.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="hero-slides-content">
+                        <h2 data-animation="fadeInUp" data-delay="100ms">Καλώς ήρθες</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="medica-about-us-area section-padding-100-20">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="medica-about-content">
+                        <div class="button-container">
+                            <button class="update-button">
+                                <img src="img/icons/pen.png" class="icon" alt="Update">
+                                Ενημέρωση
+                            </button>                   
+                             </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer-area section-padding-100">
+        <div class="main-footer-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="footer-widget-area">
+                            <div class="footer-logo">
+                                <img src="img/core-img/logo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="bottom-footer-content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/active.js"></script>
+</body>
+</html>

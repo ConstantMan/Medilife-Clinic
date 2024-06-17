@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, 
+                   initial-scale=1.0" />
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>Medilife</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            padding: 25px;
+            background-color: white;
+            color: rgb(11, 6, 43);;
+            font-size: 25px;
+        }
+
+        .dark-mode {
+            background-color: rgb(11, 6, 43);
+            color: white;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="medilife-load"></div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area">
+        <!-- Top Header Area -->
+        <div class="top-header-area">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 h-100">
+                        <div class="h-100 d-md-flex justify-content-between align-items-center">
+                            <p>Ώρες Λειτουργίας : Δευτέρα με Παρασκευή - 08:00 με 21:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header Area -->
+        <div class="main-header-area" id="stickyHeader">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 h-100">
+                        <div class="main-menu h-100">
+                            <nav class="navbar h-100 navbar-expand-lg">
+                                <!-- Logo Area  -->
+                                <a class="navbar-brand" href="index.html"><img src="img/core-img/logo.png"
+                                        alt="Logo"></a>
+                                <!-- <a class="navbar-brand" href="index-2.html">MedAegean</a> -->
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#medilifeMenu" aria-controls="medilifeMenu" aria-expanded="false"
+                                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+                                <div class="collapse navbar-collapse" id="medilifeMenu">
+                                    <!-- Menu Area -->
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item ">
+                                            <a class="nav-link" href="index.html">Αρχική</a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a class="nav-link" href="contact.html">Επικοινωνία</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="services.html">Υπηρεσίες</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="staff.html">Προσωπικό</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="login.html">Σύνδεση</a>
+                                        </li>
+                                       
+                                    </ul>
+                                    <!-- Appointment Button -->
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Breadcumb Area Start ***** -->
+    <section class="breadcumb-area bg-img gradient-background-overlay"
+        style="background-image: url(img/bg-img/benefits.png);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcumb-content">
+                        <h3 class="breadcumb-title">Το προσωπικό μας εδώ, για οτιδήποτε χρειαστείτε! </h3>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Services Area Start ***** -->
+    <div class="medilife-services-area section-padding-100-20">
+        <div class="container">
+            <div class="row">
+                <!-- Single Service Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex">
+                        <a href="cardiology.html">
+                        <div class="service-icon">
+                            <i class="icon-doctor"></i>
+                        </div>
+                        </a>
+                        <div class="service-content" style="text-align: justify;">
+                            <h5 style="text-align: center;">Δημήτριος Παπαδόπουλος</h5>
+                            <h6 style="text-align: center;">Καρδιολόγος</h6>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex">
+                        <a href="pathology.html">
+                        <div class="service-icon">
+                            <i class="icon-doctor"></i>
+                        </div>
+                        </a>
+                        <div class="service-content" style="text-align: justify;">
+                            <h5 style="text-align: center;">Μαγδαλινή Τριανταφύλλου</h5>
+                            <h6 style="text-align: center;">Παθολόγος</h6>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex">
+                        <a href="neurology.html">
+                        <div class="service-icon">
+                            <i class="icon-doctor"></i>
+                        </div>
+                        </a>
+                        <div class="service-content" style="text-align: justify;">
+                            <h5 style="text-align: center;">Παύλος Αποστόλου</h5>
+                            <h6 style="text-align: center;">Νευρολόγος</h6>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex">
+                        <a href="orthopedics.html">
+                        <div class="service-icon">
+                            <i class="icon-doctor"></i>
+                        </div>
+                        </a>
+                        <div class="service-content" style="text-align: justify;">
+                            <h5 style="text-align: center;">Γεώργιος Ιωάννου</h5>
+                            <h6 style="text-align: center;">Ορθοπεδικός</h6>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex">
+                        <a href="ophthalmology.html">
+                        <div class="service-icon">
+                            <i class="icon-doctor"></i>
+                        </div>
+                        </a>
+                        <div class="service-content" style="text-align: justify;">
+                            <h5 style="text-align: center;">Αθανασία Καλογεροπούλου</h5>
+                            <h6 style="text-align: center;">Οφθαλμίατρος</h6>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex">
+                        <a href="dentistry.html">
+                        <div class="service-icon">
+                            <i class="icon-doctor"></i>
+                        </div>
+                        </a>
+                        <div class="service-content" style="text-align: justify;">
+                            <h5 style="text-align: center;">Δήμητρα Παπαγεωργίου</h5>
+                            <h6 style="text-align: center;">Οδοντίατρος</h6>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex">
+                        <a href="ourology.html">
+                        <div class="service-icon">
+                            <i class="icon-doctor"></i>
+                        </div>
+                        </a>
+                        <div class="service-content" style="text-align: justify;">
+                            <h5 style="text-align: center;">Εμμανουήλ Θεοδωρίδης</h5>
+                            <h6 style="text-align: center;">Ουρολόγος-Ανδρολόγος</h6>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex">
+                        <a href="dietetics.html">
+                        <div class="service-icon">
+                            <i class="icon-doctor"></i>
+                        </div>
+                        </a>
+                        <div class="service-content" style="text-align: justify;">
+                            <h5 style="text-align: center;">Πέτρος Βασιλείου</h5>
+                            <h6 style="text-align: center;">Διαιτολόγος</h6>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex">
+                        <a href="gynaikology.html">
+                        <div class="service-icon">
+                            <i class="icon-doctor"></i>
+                        </div>
+                        </a>
+                        <div class="service-content" style="text-align: justify;">
+                            <h5 style="text-align: center;">Μαρία Αργυροπούλου</h5>
+                            <h6 style="text-align: center;">Γυναικολόγος-Μαιευτήρας</h6>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex">
+                        <a href="pediatrics.html">
+                        <div class="service-icon">
+                            <i class="icon-doctor"></i>
+                        </div>
+                        </a>
+                        <div class="service-content" style="text-align: justify;">
+                            <h5 style="text-align: center;">Ελένη Μάνου</h5>
+                            <h6 style="text-align: center;">Παιδίατρος</h6>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex">
+                        <a href="otorhinolaryngology.html">
+                        <div class="service-icon">
+                            <i class="icon-doctor"></i>
+                        </div>
+                        </a>
+                        <div class="service-content" style="text-align: justify;">
+                            <h5 style="text-align: center;">Γρηγόριος Νικολάου</h5>
+                            <h6 style="text-align: center;">Ωτορινολαριγγολόγος</h6>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex">
+                        <a href="aktinology.html">
+                        <div class="service-icon">
+                            <i class="icon-doctor"></i>
+                        </div>
+                    </a>
+                        <div class="service-content" style="text-align: justify;">
+                            <h5 style="text-align: center;">Γεωργίου Οικονόμου</h5>
+                            <h6 style="text-align: center;">Ακτινολόγος</h6>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex">
+                        <a href="psychiatry.html">
+                        <div class="service-icon">
+                            <i class="icon-doctor"></i>
+                        </div>
+                    </a>
+                        <div class="service-content" style="text-align: justify;">
+                            <h5 style="text-align: center;">Αθανάσιος Χατζηαναγνώστου</h5>
+                            <h6 style="text-align: center;">Ψυχίατρος</h6>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex">
+                        <a href="endocrinology.html">
+                        <div class="service-icon">
+                            <i class="icon-doctor"></i>
+                        </div>
+                    </a>
+                        <div class="service-content" style="text-align: justify;">
+                            <h5 style="text-align: center;">Μάρκος Παπαβασιλείου</h5>
+                            <h6 style="text-align: center;">Ενδοκρινολόγος</h6>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex">
+                        <a href="dermatology.html">
+                        <div class="service-icon">
+                            <i class="icon-doctor"></i>
+                        </div>
+                    </a>
+                        <div class="service-content" style="text-align: justify;">
+                            <h5 style="text-align: center;">Ζωή Χατζηγεωργίου</h5>
+                            <h6 style="text-align: center;">Δερματολόγος</h6>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-service-area d-flex">
+                        <a href="microbiology.html">
+                        <div class="service-icon">
+                            <i class="icon-doctor"></i>
+                        </div>
+                    </a>
+                        <div class="service-content" style="text-align: justify;">
+                            <h5 style="text-align: center;"> Ιωάννα Δημητρίου</h5>
+                            <h6 style="text-align: center;">Μικροβιολόγος</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- ***** Footer Area Start ***** -->
+     <footer class="footer-area section-padding-100">
+        <!-- Main Footer Area -->
+        <div class="main-footer-area">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="footer-widget-area">
+                            <div class="footer-logo">
+                                <img src="img/core-img/logo.png" alt="">
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- Bottom Footer Area -->
+
+    </footer>
+    <!-- ***** Footer Area End ***** -->
+
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
+</body>
+
+
+</html>

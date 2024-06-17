@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, 
+                   initial-scale=1.0" />
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>Medilife</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            padding: 25px;
+            background-color: white;
+            color: rgb(11, 6, 43);
+            font-size: 25px;
+        }
+
+        .dark-mode {
+            background-color: rgb(11, 6, 43);
+            color: white;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area">
+        <!-- Top Header Area -->
+        <div class="top-header-area">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 h-100">
+                        <div class="h-100 d-md-flex justify-content-between align-items-center">
+                            <p>Ώρες Λειτουργίας : Δευτέρα με Παρασκευή - 08:00 με 21:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header Area -->
+        <div class="main-header-area" id="stickyHeader">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 h-100">
+                        <div class="main-menu h-100">
+                            <nav class="navbar h-100 navbar-expand-lg">
+                                <!-- Logo Area  -->
+                                <a class="navbar-brand" href="index.html"><img src="img/core-img/logo.png"
+                                        alt="Logo"></a>
+                                <!-- <a class="navbar-brand" href="index-2.html">MedAegean</a> -->
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#medilifeMenu" aria-controls="medilifeMenu" aria-expanded="false"
+                                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+                                <div class="collapse navbar-collapse" id="medilifeMenu">
+                                    <!-- Menu Area -->
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="index.html">Αρχική <span
+                                                    class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contact.html">Επικοινωνία</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="services.html">Υπηρεσίες</a>
+                                        </li>
+                                        <li class= "nav-item">
+                                            <a class="nav-link" href="staff.html">Προσωπικό</a>
+                                        </li> 
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="login.html">Σύνδεση</a>
+                                        </li>
+    
+   
+                                    </ul>
+                                 
+                                    <!-- Appointment Button -->
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Hero Area Start ***** -->
+    <section class="hero-area">
+        <div class="hero-slides owl-carousel">
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide bg-img bg-overlay-white" style="background-image: url(img/bg-img/hero1.jpg);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <div class="hero-slides-content">
+                                <h2 data-animation="fadeInUp" data-delay="100ms">Ιατρικές Υπηρεσίες <br>που εμπιστεύεστε
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide bg-img bg-overlay-white"
+                style="background-image: url(img/bg-img/breadcumb3.jpg);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <div class="hero-slides-content">
+                                <h2 data-animation="fadeInUp" data-delay="100ms">Οι ασθενείς αποτελούν <br>πάντα προτεραιότητά μας
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide bg-img bg-overlay-white"
+                style="background-image: url(img/bg-img/breadcumb1.jpg);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <div class="hero-slides-content">
+                                <div class="hero-slides-content">
+                                    <h2 data-animation="fadeInUp" data-delay="100ms">Κοντά σας σε οτιδήποτε <br>μας χρειαστείτε!
+                                         </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- ***** Hero Area End ***** -->
+
+    <!-- ***** Book An Appoinment Area Start ***** -->
+    <div class="medilife-book-an-appoinment-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="appointment-form-content">
+                        <div class="row no-gutters align-items-center">
+                        <!-- <div class="col-12 col-lg-9">
+                                <div class="medilife-appointment-form">
+                                    <form action="#" method="post">
+                                        <div class="row align-items-end">
+                                            <div class="col-12 col-md-4">
+                                                <div class="form-group">
+                                                    <select class="form-control" id="speciality">
+                                                        <option>Speciality 1</option>
+                                                        <option>Speciality 2</option>
+                                                        <option>Speciality 3</option>
+                                                        <option>Speciality 4</option>
+                                                        <option>Speciality 5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <div class="form-group">
+                                                    <select class="form-control" id="doctors">
+                                                        <option>Doctors 1</option>
+                                                        <option>Doctors 2</option>
+                                                        <option>Doctors 3</option>
+                                                        <option>Doctors 4</option>
+                                                        <option>Doctors 5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-2">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="date" id="date"
+                                                        placeholder="Date">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-2">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="time" id="time"
+                                                        placeholder="Time">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <div class="form-group">
+                                                    <input type="text"
+                                                        class="form-control border-top-0 border-right-0 border-left-0"
+                                                        name="name" id="name" placeholder="Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <div class="form-group">
+                                                    <input type="text"
+                                                        class="form-control border-top-0 border-right-0 border-left-0"
+                                                        name="number" id="number" placeholder="Phone">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <div class="form-group">
+                                                    <input type="email"
+                                                        class="form-control border-top-0 border-right-0 border-left-0"
+                                                        name="email" id="email" placeholder="E-mail">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-7">
+                                                <div class="form-group mb-0">
+                                                    <textarea name="message"
+                                                        class="form-control mb-0 border-top-0 border-right-0 border-left-0"
+                                                        id="message" cols="30" rows="10"
+                                                        placeholder="Message"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-5 mb-0">
+                                                <div class="form-group mb-0">
+                                                    <button type="submit"
+                                                        class="btn medilife-btn">Ραντεβού<span>+</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div> -->
+                            <div class="col-12 col-lg-12">
+                                <div class="medilife-contact-info">
+                                    <!-- Single Contact Info -->
+                                    <div class="single-contact-info mb-30">
+                                        <img src="img/icons/alarm-clock.png" alt="">
+                                        <p>Δευτέρα με Παρασκευή 08:00 - 21:00 <br>Σαββατοκύριακο Κλειστά</p>
+                                    </div>
+                                    <!-- Single Contact Info -->
+                                    <div class="single-contact-info mb-30">
+                                        <img src="img/icons/envelope.png" alt="">
+                                        <p>2730-14859<br>medilife@gmail.com<br>fax : 254 478 2458</p>
+                                    </div>
+                                    <!-- Single Contact Info -->
+                                    <div class="single-contact-info">
+                                        <img src="img/icons/map-pin.png" alt="">
+                                        <p>Ασκληπιού 8<br>83200 Καρλόβασι</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Book An Appoinment Area End ***** -->
+
+    <style>
+        .medica-about-us-area .medica-about-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+        .medica-about-us-area .section-padding-100-20 {
+            padding: 100px 20px;
+        }
+        .medica-about-us-area .row {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+    
+    <style>
+        .medica-about-us-area .medica-about-content p {
+            text-align: justify;
+        }
+        .medica-about-us-area .section-padding-100-20 {
+            padding: 100px 20px;
+        }
+    </style>
+    
+    <!-- ***** About Us Area Start ***** -->
+    <section class="medica-about-us-area section-padding-100-20">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="medica-about-content">
+                        <h3>Ποιοί είμαστε:</h3>
+                        <p>Το ιατρείο μας, που βρίσκεται στην πανέμορφη Σάμο, και λειτουργεί από το 2010, προσφέρει μια ολοκληρωμένη παρουσίαση των πολλών και εξειδικευμένων υπηρεσιών υγείας που παρέχουμε. Με μια πληθώρα ειδικοτήτων ιατρών, καλύπτουμε κάθε ανάγκη σας, από τη μαιευτική και τη γυναικολογία έως την καρδιολογία και την ορθοπεδική. Το ιατρείο μας είναι εξοπλισμένο με σύγχρονο ελικοδρόμιο για επείγουσες αεροδιακομιδές, εξασφαλίζοντας άμεση πρόσβαση σε εξειδικευμένη ιατρική φροντίδα. Το πλήρως εξοπλισμένο εργαστήριο αιματολογικών εξετάσεων μας προσφέρει αξιόπιστα και γρήγορα αποτελέσματα για την καλύτερη διάγνωση και παρακολούθηση της υγείας σας. Η ιστοσελίδα μας περιλαμβάνει επίσης λεπτομερείς πληροφορίες για όλες τις διαθέσιμες υπηρεσίες, τους ιατρούς μας και τις ώρες λειτουργίας, διευκολύνοντας την επικοινωνία και την πρόσβαση σε υψηλής ποιότητας ιατρική φροντίδα. Με στόχο την υγεία και την ευεξία σας, είμαστε εδώ για να σας προσφέρουμε το καλύτερο δυνατό.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- ***** Cool Facts Area Start ***** -->
+    <section class="medilife-cool-facts-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <!-- Single Cool Fact-->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cool-fact-area text-center mb-100">
+                        <i class="icon-blood-transfusion-2"></i>
+                        <h2><span class="counter">500</span></h2>
+                        <h6>Αιμοδοσίες ετησίως</h6>
+                        <p>Διοργανώνουμε τακτικές αιμοδοσίες καθ' όλη τη διάρκεια του έτους, προσφέροντας μια σημαντική υπηρεσία στην κοινότητα. Με στόχο την ενίσχυση των αποθεμάτων αίματος και την υποστήριξη των ασθενών που το χρειάζονται, οι αιμοδοσίες μας πραγματοποιούνται σε τακτά χρονικά διαστήματα και είναι ανοιχτές για όλους τους κατοίκους και επισκέπτες του νησιού. Σας προσκαλούμε να συμμετάσχετε σε αυτή την πράξη ανθρωπιάς, βοηθώντας να σωθούν ζωές και να ενισχυθεί το αίσθημα της αλληλεγγύης.</p>
+                    </div>
+                </div>
+                <!-- Single Cool Fact-->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cool-fact-area text-center mb-100">
+                        <i class="icon-atoms"></i>
+                        <h2><span class="counter">1</span>k</h2>
+                        <h6>Ασθενείς</h6>
+                        <p>Οι ασθενείς μας βρίσκονται πάντα στο επίκεντρο της φροντίδας μας. Στο ιατρείο μας, προσφέρουμε εξειδικευμένες υπηρεσίες υγείας με αφοσίωση και επαγγελματισμό. Κάθε ασθενής αντιμετωπίζεται με σεβασμό και κατανόηση, εξασφαλίζοντας ότι λαμβάνει την καλύτερη δυνατή ιατρική φροντίδα. Είμαστε εδώ για να σας υποστηρίξουμε σε κάθε βήμα της υγειονομικής σας περίθαλψης, παρέχοντας ένα φιλόξενο και ασφαλές περιβάλλον για την αντιμετώπιση κάθε ιατρικής ανάγκης.</p>
+                    </div>
+                </div>
+                <!-- Single Cool Fact-->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cool-fact-area text-center mb-100">
+                        <i class="icon-microscope"></i>
+                        <h2><span class="counter">16</span></h2>
+                        <h6>Ειδικότητες</h6>
+                        <p>Στο ιατρείο μας, προσφέρουμε ένα ευρύ φάσμα ιατρικών ειδικοτήτων για να καλύψουμε κάθε ανάγκη των ασθενών μας. Από τη γενική ιατρική και την καρδιολογία, μέχρι τη μαιευτική-γυναικολογία, την παιδιατρική και την ορθοπεδική, οι εξειδικευμένοι ιατροί μας είναι εδώ για να παρέχουν υψηλής ποιότητας φροντίδα. Οι υπηρεσίες μας επεκτείνονται και σε άλλους τομείς όπως η ενδοκρινολογία, η δερματολογία και η νευρολογία, εξασφαλίζοντας ολοκληρωμένη ιατρική κάλυψη για κάθε περίπτωση. Με αφοσίωση και επαγγελματισμό, είμαστε έτοιμοι να σας προσφέρουμε την καλύτερη δυνατή ιατρική φροντίδα.</p>
+                    </div>
+                </div>
+                <!-- Single Cool Fact-->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="single-cool-fact-area text-center mb-100">
+                        <i class="icon-doctor-1"></i>
+                        <h2><span class="counter">16</span></h2>
+                        <h6>Ιατροί</h6>
+                        <p>Οι γιατροί μας, είναι εξειδικευμένοι επαγγελματίες που καλύπτουν ένα ευρύ φάσμα ιατρικών τομέων. Με πλούσια εμπειρία και συνεχή εκπαίδευση, είναι αφοσιωμένοι στην παροχή υψηλής ποιότητας φροντίδας στους ασθενείς μας. Από καρδιολόγους και παιδίατρους, μέχρι γυναικολόγους και ορθοπεδικούς, η ομάδα μας είναι έτοιμη να αντιμετωπίσει κάθε ιατρική πρόκληση με γνώση και επαγγελματισμό. Η πολυπλοκότητα και η ποικιλία των ειδικοτήτων μας εξασφαλίζουν ότι μπορούμε να προσφέρουμε ολοκληρωμένη και εξειδικευμένη ιατρική φροντίδα για κάθε ανάγκη σας.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Cool Facts Area End ***** -->
+
+    <!-- ***** Gallery Area Start ***** -->
+    <div class="medilife-gallery-area owl-carousel">
+        <!-- Single Gallery Item -->
+        <div class="single-gallery-item">
+            <img src="img/bg-img/g1.jpg" alt="">
+            <div class="view-more-btn">
+                <a href="img/bg-img/g1.jpg" class="btn gallery-img"></a>
+            </div>
+        </div>
+        <!-- Single Gallery Item -->
+        <div class="single-gallery-item">
+            <img src="img/bg-img/g2.jpg" alt="">
+            <div class="view-more-btn">
+                <a href="img/bg-img/g2.jpg" class="btn gallery-img"></a>
+            </div>
+        </div>
+        <!-- Single Gallery Item -->
+        <div class="single-gallery-item">
+            <img src="img/bg-img/g3.jpg" alt="">
+            <div class="view-more-btn">
+                <a href="img/bg-img/g3.jpg" class="btn gallery-img"></a>
+            </div>
+        </div>
+
+        <!-- Single Gallery Item -->
+        <div class="single-gallery-item">
+            <img src="img/bg-img/g4.jpg" alt="">
+            <div class="view-more-btn">
+                <a href="img/bg-img/g4.jpg" class="btn gallery-img"></a>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Gallery Area End ***** -->
+    <footer class="footer-area section-padding-100">
+        <!-- Main Footer Area -->
+        <div class="main-footer-area">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="footer-widget-area">
+                            <div class="footer-logo">
+                                <img src="img/core-img/logo.png" alt="">
+                            </div>
+                          
+                            
+                        </div>
+                    </div>
+
+
+                </div>
+                </center>
+                <!-- Bottom Footer Area -->
+                <div class="bottom-footer-area">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="bottom-footer-content">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ***** Footer Area End ***** -->
+
+                <!-- jQuery (Necessary for All JavaScript Plugins) -->
+                <script src="js/jquery/jquery-2.2.4.min.js"></script>
+                <!-- Popper js -->
+                <script src="js/popper.min.js"></script>
+                <!-- Bootstrap js -->
+                <script src="js/bootstrap.min.js"></script>
+                <!-- Plugins js -->
+                <script src="js/plugins.js"></script>
+                <!-- Active js -->
+                <script src="js/active.js"></script>
+
+</body>
+
+
+</html>
